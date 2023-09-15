@@ -9,7 +9,7 @@
 }
 
 :root {
-	--primary: #4246fd;
+	--primary: #B20030
 	--secondary: #881cf9;
 	--tertiary: #f5f3fb;
 	--quaternary: #222529;
@@ -33,12 +33,12 @@ a:active {
 
 html .text-color-primary,
 html .text-primary {
-	color: #4246fd !important;
+	color: #B20030 !important;
 }
 
 html .text-color-hover-primary:hover,
 html .text-hover-primary:hover {
-	color: #4246fd !important;
+	color: ##17064A !important;
 }
 
 html .text-color-secondary,
