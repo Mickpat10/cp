@@ -1,0 +1,36 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CalendarSampleData.html
+/CalendarScheduleSamplePate.html
+/images/PayrollReport.png
+/CalendarSource.html
+/Calls Table_source.html
+/Calls_Page_sample.html
+/Calls_table_sample.html
+/customer.html
+/CustomerTabSource.html
+/iMac Desktop Workspace Mockup PSD.png
+/iMac Desktop Workspace Mockup PSD.psd
+/InventorySource.html
+/Invoice.html
+/invoices.html
+/Invoices_sample.html
+/JobOverviewSource.html
+/Man working in Desktop Computer Mockup.psd
+/New Responsive MockUp Vol 04 A.psd
+/New Responsive MockUp Vol 04 B.psd
+/New Responsive MockUp Vol 04 C.psd
+/Office tv monitor mockup.psd
+/PayrollReport.html
+/PhoneCall.html
+/ProfitMarginReport.html
+/PurchaseOrders.html
+/purchase_order_sample.html
+/Schedule.html
+/Tv Mockup EXPO-1 Vertical.psd
+/Tv Mockup EXPO-1.psd
+/.vs/ProductWebsite/FileContentIndex
+/.vs/ProductWebsite
+/.vs
