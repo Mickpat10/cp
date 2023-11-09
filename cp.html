@@ -57,6 +57,36 @@
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
+    
+    <style>
+        .screenshot-panel {
+            display: flex; /* Establishes a flex container */
+            justify-content: center; /* Centers the image horizontally in the flex container */
+            align-items: center; /* Centers the image vertically in the flex container */
+            background-color: #D9D9D9; /* Light grey color for the panel background */
+            padding: 15px; /* Padding to create space around the image */
+            border-radius: 5px; /* Rounded corners for the panel */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+            margin: 20px 0; /* Spacing around the panel */
+            max-width: 650px; /* Set this value to be larger than the image width */
+            width: 600px; /* Ensures the panel width is responsive to the container size */
+            box-sizing: border-box; /* Ensures padding is included in the width */
+            height: auto; /* Adjust the height as needed */
+            overflow: hidden; /* Ensures no overflow of content outside the panel */
+        }
+
+
+            .screenshot-panel img {
+                width: 100%; /* Makes the image responsive */
+                height: auto; /* Maintains the aspect ratio of the image */
+                display: block; /* Prevents any unwanted white space below the image */
+                max-height: 400px;
+            }
+
+
+
+
+    </style>
 
 </head>
 
@@ -968,23 +998,18 @@
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
 
-                            <a class="lightbox" href="images/Calls.png" data-plugin-options="{'type':'image'}">
-                                <img alt="Porto Support" src="images/Calls.png"
-                                     data-src="images/Calls.png"
-                                     class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     style="width: 400px; max-width: none; animation-delay: 200ms;">
-                            </a>
-                            
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/Calls.png" data-plugin-options="{'type':'image'}">
+                                    <img alt="Porto Support" src="images/Calls.png"
+                                         data-src="images/Calls.png"
+                                         class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200">
+                                </a>
+                            </div>
 
-                            
-                            <!--<img alt="Porto Documentation" src="img/landing/porto_docs.jpg"
-             data-src="img/landing/porto_docs.jpg"
-             class="img-fluid rounded box-shadow-3 position-absolute appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-             data-appear-animation="fadeInUp" data-appear-animation-delay="700"
-             style="left: -100px; bottom: 50px; animation-delay: 700ms;">-->
+
+                            </div>
                         </div>
-                    </div>
                 </div>
 
             </section>
@@ -1058,27 +1083,22 @@
                                      data-src="img/landing/porto_dots2.png" alt=""
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
-                            <a class="lightbox" href="images/Customer.png" data-plugin-options="{'type':'image'}">
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/Customer.png" data-plugin-options="{'type':'image'}">
 
-                            <img alt="Customer" src="images/Customer.png"
-                                 data-src="images/Customer.png"
-                               
-                                 class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                 data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                 style="width: 400px; max-width: none; animation-delay: 200ms;">
-                            
-                            </a>
-                        
+                                    <img alt="Customer" src="images/Customer.png"
+                                         data-src="images/Customer.png"
+                                         class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200" />
+
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
             </section>
-
-
-
-
-
 
 
             <section id="support" class="section section-angled bg-light border-0 m-0 position-relative pt-0">
@@ -1133,17 +1153,19 @@
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
 
-                            <a class="lightbox" href="images/Scheduling.png" data-plugin-options="{'type':'image'}">
-                                <img alt="Scheduling" src="images/Scheduling.png"
-                                     data-src="images/scheduling.png"
-                                     class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     style="width: 400px; max-width: none; animation-delay: 200ms;">
-</a>    
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/Scheduling.png" data-plugin-options="{'type':'image'}">
+                                    <img alt="Scheduling" src="images/Scheduling.png"
+                                         data-src="images/scheduling.png"
+                                         class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                         >
+                                </a>
+                                </div>
 
+                            </div>
                         </div>
-                    </div>
                 </div>
 
             </section>
@@ -1209,18 +1231,19 @@
                                      data-src="img/landing/porto_dots2.png" alt=""
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
-
-                            <a class="lightbox" href="images/mobileapp1.png" data-plugin-options="{'type':'image'}">
-                                <img alt="Mobile App" src="images/mobileapp1.png"
-                                     data-src="images/mobileapp1.png"
-                                     class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     style="height: 400px; max-width: none; animation-delay: 200ms;">
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/mobileapp1.png" data-plugin-options="{'type':'image'}">
+                                    <img alt="Mobile App" src="images/mobileapp1.png"
+                                         data-src="images/mobileapp1.png"
+                                         class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                        >
                                 </a>
+                                </div>
 
+                            </div>
                         </div>
-                    </div>
                 </div>
 
             </section>
@@ -1291,17 +1314,20 @@
                                  data-src="img/landing/porto_dots2.png" alt=""
                                  style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                         </div>
-                        <a class="lightbox" href="images/Invoices.png" data-plugin-options="{'type':'image'}">
 
-                            <img alt="Invoices" src="images/Invoices.png"
-                                 data-src="images/Invoices.png"
-                                 class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                 data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                 data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                 style="width: 400px; max-width: none; animation-delay: 200ms;">
-                        </a>    
+                        <div class="screenshot-panel">
+                            <a class="lightbox" href="images/Invoices.png" data-plugin-options="{'type':'image'}">
+
+                                <img alt="Invoices" src="images/Invoices.png"
+                                     data-src="images/Invoices.png"
+                                     class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                     >
+                            </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
             </div>
         </section>
 
@@ -1382,15 +1408,14 @@
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
 
-                            <a class="lightbox" href="images/Job.png" data-plugin-options="{'type':'image'}">
-                            
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/Job.png" data-plugin-options="{'type':'image'}">
+                                    <img alt="Job" src="images/Job.png" class="img-fluid appear-animation animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                         style="animation-delay: 200ms;">
+                                </a>
+                            </div>
 
-                            <img alt="Job" src="images/Job.png" data-src="images/Job.png"
-                                 class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                 data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                 style="width: 400px; max-width: none; animation-delay: 200ms;">
-                            
-                            </a>    
 
                         </div>
                     </div>
