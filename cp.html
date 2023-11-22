@@ -1,916 +1,1731 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <!-- Basic -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>CertainPath Software</title>
 
     <meta name="keywords" content="WebSite Template" />
-    <meta name="description" content="Porto - Multipurpose Website Template">
-    <meta name="author" content="okler.net">
+    <meta name="description" content="Porto - Multipurpose Website Template" />
+    <meta name="author" content="okler.net" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
+    />
 
     <!-- Web Fonts  -->
-    <link id="googleFonts"
-          href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap"
-          rel="stylesheet" type="text/css">
+    <link
+      id="googleFonts"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="vendor/animate/animate.compat.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="vendor/animate/animate.compat.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/simple-line-icons/css/simple-line-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/magnific-popup/magnific-popup.min.css"
+    />
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/theme-elements.css">
-    <link rel="stylesheet" href="css/theme-blog.css">
-    <link rel="stylesheet" href="css/theme-shop.css">
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme-elements.css" />
+    <link rel="stylesheet" href="css/theme-blog.css" />
+    <link rel="stylesheet" href="css/theme-shop.css" />
 
     <!-- Revolution Slider CSS -->
-    <link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
-    <link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
-    <link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
+    <link rel="stylesheet" href="vendor/rs-plugin/css/settings.css" />
+    <link rel="stylesheet" href="vendor/rs-plugin/css/layers.css" />
+    <link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css" />
 
     <!-- Demo CSS -->
-    <link rel="stylesheet" href="css/demos/demo-app-landing.css">
+    <link rel="stylesheet" href="css/demos/demo-app-landing.css" />
 
     <!-- Skin CSS -->
-    <link id="skinCSS" rel="stylesheet" href="css/skins/skin-app-landing.css">
+    <link id="skinCSS" rel="stylesheet" href="css/skins/skin-app-landing.css" />
 
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css" />
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
-</head>
+    <style>
+      .screenshot-panel {
+        display: flex; /* Establishes a flex container */
+        justify-content: center; /* Centers the image horizontally in the flex container */
+        align-items: center; /* Centers the image vertically in the flex container */
+        background-color: #d9d9d9; /* Light grey color for the panel background */
+        padding: 15px; /* Padding to create space around the image */
+        border-radius: 5px; /* Rounded corners for the panel */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+        margin: 20px 0; /* Spacing around the panel */
+        max-width: 650px; /* Set this value to be larger than the image width */
+        width: 600px; /* Ensures the panel width is responsive to the container size */
+        box-sizing: border-box; /* Ensures padding is included in the width */
+        height: auto; /* Adjust the height as needed */
+        overflow: hidden; /* Ensures no overflow of content outside the panel */
+      }
 
-<body data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
+      .screenshot-panel img {
+        width: 100%; /* Makes the image responsive */
+        height: auto; /* Maintains the aspect ratio of the image */
+        display: block; /* Prevents any unwanted white space below the image */
+        max-height: 400px;
+      }
+    </style>
+  </head>
 
+  <body data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
     <div class="body">
-
-        <div class="custom-svg-1">
-            <img width="1290" height="1290" src="img/demos/app-landing/svg/shape-1.svg" alt="" data-icon
-                 data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
+      <header
+        id="header"
+        class="header-transparent header-transparent-light-bottom-border header-transparent-light-bottom-border-1 header-effect-shrink"
+        data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}"
+      >
+        <div class="header-body border-top-0 header-body-bottom-border">
+          <div class="header-container container">
+            <div class="header-row">
+              <div class="header-column">
+                <div class="header-row">
+                  <div class="header-logo">
+                    <a href="https://mycertainpath.com/" class="brand">
+                      <img
+                        alt="CertainPath"
+                        data-src="https://mycertainpath.com/wp-content/uploads/2022/05/CertainPath-Full-Color.svg"
+                        class="lazyloaded"
+                        src="https://mycertainpath.com/wp-content/uploads/2022/05/CertainPath-Full-Color.svg"
+                      /><noscript>
+                        <img
+                          src="https://mycertainpath.com/wp-content/uploads/2022/05/CertainPath-Full-Color.svg"
+                          alt="CertainPath"
+                        />
+                      </noscript>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </header>
 
-        <div class="opacity-2">
-            <div class="custom-el custom-el-circle border-color-primary appear-animation" data-appear-animation="fadeIn"
-                 data-appear-animation-delay="0" data-appear-animation-duration="3s"
-                 style="top: 20%; left: 50%; width: 38px; height: 38px;">
+      <div role="main" class="main">
+        <section id="overview"
+          style="background-color: #17064a !important"
+          class="section bg-transparent border-0 py-5 m-0 p-relative"
+        >
+          <div class="container pt-lg-5">
+            <div class="row pt-lg-5">
+              <div class="col-lg-8 text-center text-lg-start pt-5 mt-5">
+                <h2
+                  class="text-color-primary positive-ls-3 mt-lg-5 pt-lg-5 font-weight-bold text-uppercase text-4 line-height-3 mb-0 appear-animation"
+                  data-appear-animation="fadeInUpShorter"
+                  data-appear-animation-delay="500"
+                  data-plugin-options="{'minWindowWidth': 0}"
+                >
+                  Solution for contractors by contractors
+                </h2>
+
+                <h1
+                  class="custom-font-size-1 text-color-secondary font-weight-bold py-3 mb-1 p-relative appear-animation"
+                  data-appear-animation="fadeInUpShorter"
+                  data-appear-animation-delay="750"
+                  data-plugin-options="{'minWindowWidth': 0}"
+                >
+                  <span
+                    style="color: white !important"
+                    class="p-relative z-index-1"
+                  >
+                    CertainPath Software
+                  </span>
+                  <span
+                    style="color: white !important"
+                    class="custom-stroke-text-effect-1 opacity-2 p-absolute text-10 right-0 me-4"
+                  >
+                    CertainPath
+                  </span>
+                </h1>
+
+                <p
+                  style="color: white !important; font-size: 1.2rem !important"
+                  class="text-4-5 font-weight-medium mb-4 appear-animation"
+                  data-appear-animation="fadeInUpShorter"
+                  data-appear-animation-delay="1000"
+                  data-plugin-options="{'minWindowWidth': 0}"
+                >
+                  CertainPath, with its blend of cutting-edge software and
+                  personalized professional coaching, is your path to success.
+                  Discover the road map to success, tailored specifically for
+                  contractors striving for growth, efficiency, and excellence.
+                </p>
+
+                <a
+                  style="
+                    background-color: #b20030 !important;
+                    color: white !important;
+                    font-size: 1.2rem !important;
+                    border-color: #b20030 !important;
+                  "
+                  href="#"
+                  class="btn btn-secondary positive-ls-2 btn-outline font-weight-bold text-2 btn-py-3 px-5 mt-2 appear-animation"
+                  data-appear-animation="fadeInUpShorter"
+                  data-appear-animation-delay="250"
+                  data-plugin-options="{'minWindowWidth': 0}"
+                >
+                  Schedule Demo
+                </a>
+              </div>
+
+              <div class="col-lg-4 pt-5 pt-lg-0 text-center">
+                <div class="custom-carousel-1 m-auto">
+                  <div
+                    class="owl-carousel owl-theme stage-margin nav-style-1"
+                    data-plugin-options="{'items': 1, 'margin': 10, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 45, 'autoplay': true, 'autoplayTimeout': 3000}"
+                  >
+                    <div>
+                      <img
+                        alt=""
+                        class="img-fluid"
+                        src="images/mobileapp1.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
 
-        <div class="opacity-2">
-            <div class="custom-el custom-el-circle border-color-secondary appear-animation"
-                 data-appear-animation="fadeIn" data-appear-animation-delay="200" data-appear-animation-duration="3s"
-                 style="top: 27%; left: 55%; width: 15px; height: 15px;">
+        <section id="key-benefits"
+          class="col appear-animation animated fadeInRightShorterPlus appear-animation-visible"
+          data-appear-animation="fadeInRightShorterPlus"
+          data-appear-animation-delay="100"
+          style="animation-delay: 100ms"
+        >
+          <div class="text-center">
+            <h2 class="text-color-dark font-weight-bold text-10 mb-4-5">
+              Key Benefits
+            </h2>
+          </div>
+
+          <div class="row pt-3">
+            <div class="col-lg-6">
+              <div
+                class="feature-box feature-box-style-6 custom-feature-box-1 reverse"
+              >
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-monitor.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary mt-1'}"
+                    class="svg-fill-color-primary mt-1"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">
+                    Specialized for Home Services
+                  </h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Our software is tailored specifically for the home services
+                    industry, ensuring an intuitive and efficient experience.
+                  </p>
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="opacity-2">
-            <div class="custom-el custom-el-circle border-color-secondary appear-animation"
-                 data-appear-animation="fadeIn" data-appear-animation-delay="400" data-appear-animation-duration="3s"
-                 style="top: 54%; left: 50%; width: 15px; height: 15px;">
+            <div class="col-lg-6 text-start">
+              <div class="feature-box feature-box-style-6 custom-feature-box-1">
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-refresh.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">
+                    Proven Framework for Growth
+                  </h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Equip your business with a tried-and-true methodology that
+                    has successfully transformed countless contracting
+                    businesses.
+                  </p>
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="opacity-2">
-            <div class="custom-el custom-el-circle custom-el-blur-1 border-color-primary appear-animation"
-                 data-appear-animation="fadeIn" data-appear-animation-delay="300" data-appear-animation-duration="3s"
-                 style="top: 70%; left: 47%; width: 48px; height: 48px;">
+          </div>
+          <div class="row pt-3">
+            <div class="col-lg-6">
+              <div
+                class="feature-box feature-box-style-6 custom-feature-box-1 reverse"
+              >
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-finger.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">
+                    Unparalleled Support
+                  </h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Backed by experienced professionals who understand the
+                    unique challenges and opportunities within the home services
+                    sector.
+                  </p>
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="opacity-2">
-            <div class="custom-el custom-el-rounded-rectangle custom-rotate-45 custom-el-blur-2 border-color-primary appear-animation"
-                 data-appear-animation="fadeIn" data-appear-animation-delay="700" data-appear-animation-duration="3s"
-                 style="top: 60%; left: 42%; width: 27px; height: 27px;">
+            <div class="col-lg-6 text-start">
+              <div class="feature-box feature-box-style-6 custom-feature-box-1">
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-chat.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">
+                    Tools for Success
+                  </h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Comprehensive software, reporting, and marketing solutions
+                    designed to optimize and elevate your operations.
+                  </p>
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="opacity-2">
-            <div class="custom-el custom-el-rounded-rectangle custom-rotate-45 custom-el-blur-1 border-color-primary appear-animation"
-                 data-appear-animation="fadeIn" data-appear-animation-delay="800" data-appear-animation-duration="3s"
-                 style="top: 64%; left: 56%; width: 18px; height: 18px;">
+          </div>
+          <div class="row pt-3">
+            <div class="col-lg-6">
+              <div
+                class="feature-box feature-box-style-6 custom-feature-box-1 reverse"
+              >
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-avatar.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">Never Alone</h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    With our coaches and expert team, you have a partner in
+                    every phase of your business journey, guiding and supporting
+                    you towards success.
+                  </p>
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="opacity-2">
-            <div class="custom-el custom-el-circle border-color-primary appear-animation" data-appear-animation="fadeIn"
-                 data-appear-animation-delay="500" data-appear-animation-duration="3s"
-                 style="top: 75%; left: 96%; width: 38px; height: 38px;">
+            <div class="col-lg-6 text-start">
+              <div class="feature-box feature-box-style-6 custom-feature-box-1">
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-pencil.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">
+                    Michael, please add another one
+                  </h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing metus.
+                  </p>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
 
-        <header id="header"
-                class="header-transparent header-transparent-light-bottom-border header-transparent-light-bottom-border-1 header-effect-shrink"
-                data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
-            <div class="header-body border-top-0 header-body-bottom-border">
-                <div class="header-container container">
-                    <div class="header-row">
-                        <div class="header-column">
-                            <div class="header-row">
-                                <div class="header-logo">
-                                    <a href="https://mycertainpath.com/" class="brand">
-                                        <img alt="CertainPath"
-                                             data-src="https://mycertainpath.com/wp-content/uploads/2022/05/CertainPath-Full-Color.svg"
-                                             class=" lazyloaded"
-                                             src="https://mycertainpath.com/wp-content/uploads/2022/05/CertainPath-Full-Color.svg"><noscript>
-                                            <img src="https://mycertainpath.com/wp-content/uploads/2022/05/CertainPath-Full-Color.svg"
-                                                 alt="CertainPath">
-                                        </noscript>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section id="red-line-2"
+          style="background-color: #b20030 !important"
+          class="section"
+        >
+          <div
+            style="background-color: #b20030 !important"
+            class="container pt-4"
+          >
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-4">
+                <h2
+                  style="color: white !important"
+                  class="text-7 font-weight-semibold line-height-2 mb-2"
+                >
+                  The new way to handle your home service business.
+                </h2>
+              </div>
+              <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
+                <i style="color: white !important" class="icon-bg icon-1"></i>
+                <h4
+                  style="color: white !important"
+                  class="font-weight-bold custom-font-size-2 line-height-3 mb-0"
+                >
+                  Coaching
+                </h4>
+              </div>
+              <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
+                <i style="color: white !important" class="icon-bg icon-2"></i>
+                <h4
+                  style="color: white !important"
+                  class="font-weight-bold custom-font-size-2 line-height-3 mb-0"
+                >
+                  Training
+                </h4>
+              </div>
+              <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
+                <i style="color: white !important" class="icon-bg icon-3"></i>
+                <h4
+                  style="color: white !important"
+                  class="font-weight-bold custom-font-size-2 line-height-3 mb-0"
+                >
+                  Software
+                </h4>
+              </div>
             </div>
+          </div>
+        </section>
 
-
-
-
-        </header>
-
-        <div role="main" class="main">
-
-            <section id="overview" class="section bg-transparent border-0 py-5 m-0 p-relative">
-
-                <div class="container pt-lg-5">
-                    <div class="row pt-lg-5">
-                        <div class="col-lg-8 text-center text-lg-start pt-5 mt-5">
-                            <h2 class="text-color-primary positive-ls-3 mt-lg-5 pt-lg-5 font-weight-bold text-uppercase text-4 line-height-3 mb-0 appear-animation"
-                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
-                                data-plugin-options="{'minWindowWidth': 0}">
-                                Solution for contractors by contractors
-                            </h2>
-
-                            <h1 class="custom-font-size-1 text-color-secondary font-weight-bold py-3 mb-1 p-relative appear-animation"
-                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
-                                data-plugin-options="{'minWindowWidth': 0}">
-                                <span class="p-relative z-index-1">
-                                    CertainPath Software
-                                </span>
-                                <span class="custom-stroke-text-effect-1 opacity-2 p-absolute text-10 right-0 me-4">
-                                    CertainPath
-                                </span>
-                            </h1>
-
-                            <p class="text-4-5 font-weight-medium mb-4 appear-animation"
-                               data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
-                               data-plugin-options="{'minWindowWidth': 0}">
-                                CertainPath, with its blend of cutting-edge
-                                software and personalized professional coaching, is your path to success.
-                                Discover the roadmap to success, tailored specifically for contractors striving for
-                                growth, efficiency, and excellence.
-                            </p>
-
-                            <a href="#"
-                               class="btn btn-secondary positive-ls-2 btn-outline font-weight-bold text-2 btn-py-3 px-5 mt-2 appear-animation"
-                               data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"
-                               data-plugin-options="{'minWindowWidth': 0}">
-                                Schedule Demo
-                            </a>
-                        </div>
-
-                        <div class="col-lg-4 pt-5 pt-lg-0 text-center">
-
-                            <div class="custom-carousel-1 m-auto">
-                                <div class="owl-carousel owl-theme stage-margin nav-style-1 "
-                                     data-plugin-options="{'items': 1, 'margin': 10, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 45, 'autoplay': true, 'autoplayTimeout': 3000}">
-                                    <div>
-                                        <img alt="" class="img-fluid" src="img/demos/app-landing/screens/screen-4.jpg">
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <div id="examples" class="container py-2">
-
-                <div class="row mb-5 pb-3">
-
-                    <div class="col-lg-4 mb-5 mb-lg-0 appear-animation animated fadeInUpShorter appear-animation-visible"
-                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
-                         style="animation-delay: 200ms;">
-
-                        <div class="card border-0 border-radius-0 bg-color-grey">
-                            <div class="card-body">
-
-                                <h4 class="card-title mb-1 text-4 font-weight-bold">Coaching</h4>
-                                <p class="card-text">
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-5 mb-lg-0 appear-animation animated fadeInUpShorter appear-animation-visible"
-                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400"
-                         style="animation-delay: 400ms;">
-
-                        <div class="card border-0 border-radius-0 bg-color-grey">
-                            <div class="card-body">
-
-                                <h4 class="card-title mb-1 text-4 font-weight-bold">Training</h4>
-                                <p class="card-text">
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 appear-animation animated fadeInUpShorter appear-animation-visible"
-                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600"
-                         style="animation-delay: 600ms;">
-
-                        <div class="card border-0 bg-color-grey">
-                            <div class="card-body">
-
-                                <h4 class="card-title mt-2 mb-1 text-4 font-weight-bold">
-                                    Software
-                                </h4>
-                                <p class="card-text">
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section id="why-choose-cp"
+          style="background-color: #eeeeee !important"
+          class="section section-height-5 section-with-shape-divider border-0 my-5 lazyloaded"
+          data-bg-src="img/parallax/parallax-2.jpg"
+          style="background-image: url('img/parallax/parallax-2.jpg')"
+        >
+          <div
+            class="shape-divider shape-divider-reverse-xy"
+            style="height: 120px"
+          >
+            <div
+              class="shape-divider-horizontal-animation shape-divider-horizontal-animation-to-left start"
+            >
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 2000 120"
+                preserveAspectRatio="none"
+              >
+                <polygon
+                  fill="#FFF"
+                  points="-11,2 693,112 2019,6 2019,135 -11,135 "
+                ></polygon>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 2000 120"
+                preserveAspectRatio="none"
+              >
+                <polygon
+                  fill="#FFF"
+                  points="-11,2 693,112 2019,6 2019,135 -11,135 "
+                ></polygon>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 2000 120"
+                preserveAspectRatio="none"
+              >
+                <polygon
+                  fill="#FFF"
+                  points="-11,2 693,112 2019,6 2019,135 -11,135 "
+                ></polygon>
+              </svg>
             </div>
+          </div>
 
-            <section class="section position-relative overflow-hidden border-0 m-0">
-                <div class="container pt-5-5 pb-5 mb-3">
-                    <div class="row mb-5-5">
-                        <div class="col">
-                            <h2 class="text-color-dark font-weight-bold text-7 line-height-1 mb-3-5 appear-animation animated fadeInUpShorterPlus appear-animation-visible"
-                                data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="300"
-                                style="animation-delay: 300ms;">
-                                Key Benefits
-                            </h2>
-                            <p class="text-4 font-weight-light appear-animation animated fadeInUpShorterPlus appear-animation-visible"
-                               data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="500"
-                               style="animation-delay: 500ms;">
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-5 appear-animation animated fadeInUpShorterPlus appear-animation-visible"
-                             data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="550"
-                             style="animation-delay: 550ms;">
-                            <div class="d-flex">
-
-                                <div class="ps-4">
-                                    <h3 class="text-color-dark font-weight-bold text-transform-none text-5 mb-2">
-                                        Specialized for Home Services
-                                    </h3>
-                                    <p class="font-weight-light text-3-5 mb-3-5">
-                                        Our software is tailored specifically
-                                        for the home services industry, ensuring an intuitive and efficient experience.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-5 appear-animation animated fadeInUpShorterPlus appear-animation-visible"
-                             data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="750"
-                             style="animation-delay: 750ms;">
-                            <div class="d-flex">
-
-                                <div class="ps-3">
-                                    <h3 class="text-color-dark font-weight-bold text-transform-none text-5 mb-2">
-                                        Proven
-                                        Framework for Growth
-                                    </h3>
-                                    <p class="font-weight-light text-3-5 mb-3-5">
-                                        Equip your business with a
-                                        tried-and-true methodology that has successfully transformed countless
-                                        contracting businesses.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-5 appear-animation animated fadeInUpShorterPlus appear-animation-visible"
-                             data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="950">
-                            <div class="d-flex">
-
-                                <div class="ps-4">
-                                    <h3 class="text-color-dark font-weight-bold text-transform-none text-5 mb-2">
-                                        Unparalleled Support
-                                    </h3>
-                                    <p class="font-weight-light text-3-5 mb-3-5">
-                                        Backed by experienced professionals who
-                                        understand the unique challenges and opportunities within the home services
-                                        sector.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 appear-animation animated appear-animation-visible"
-                             data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1150">
-                            <div class="d-flex">
-
-                                <div class="ps-4">
-                                    <h3 class="text-color-dark font-weight-bold text-transform-none text-5 mb-2">
-                                        Tools
-                                        for Success
-                                    </h3>
-                                    <p class="font-weight-light text-3-5 mb-3-5">
-                                        Comprehensive software, reporting, and
-                                        marketing solutions designed to optimize and elevate your operations.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-5 appear-animation animated fadeInUpShorterPlus appear-animation-visible"
-                             data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="950">
-                            <div class="d-flex">
-
-                                <div class="ps-4">
-                                    <h3 class="text-color-dark font-weight-bold text-transform-none text-5 mb-2">
-                                        Never
-                                        Alone
-                                    </h3>
-                                    <p class="font-weight-light text-3-5 mb-3-5">
-                                        With our coaches and expert team, you
-                                        have a partner in every phase of your business journey, guiding and supporting
-                                        you towards success.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="position-absolute transform3dy-n50 right-0 pe-5 me-4">
-                    <div class="appear-animation animated fadeInRightShorterPlus appear-animation-visible"
-                         data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="1700"
-                         data-appear-animation-duration="750ms" style="animation-delay: 1700ms;">
-                        <div class="custom-square-1 bg-primary mb-5"></div>
-                    </div>
-                </div>
-                <div class="position-absolute transform3dy-n50 right-15 pe-5 me-5">
-                    <div class="appear-animation animated fadeInRightShorterPlus appear-animation-visible"
-                         data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="1500"
-                         data-appear-animation-duration="750ms" style="animation-delay: 1500ms;">
-                        <div class="custom-square-1 bg-dark pe-5 me-5 mt-4 mb-5"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section section-height-5 section-with-shape-divider border-0 my-5 lazyloaded"
-                     data-bg-src="img/parallax/parallax-2.jpg"
-                     style="background-image: url(&quot;img/parallax/parallax-2.jpg&quot;);">
-                <div class="shape-divider shape-divider-reverse-xy" style="height: 120px;">
-                    <div class="shape-divider-horizontal-animation shape-divider-horizontal-animation-to-left start">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             x="0px" y="0px" viewBox="0 0 2000 120" preserveAspectRatio="none">
-                            <polygon fill="#FFF" points="-11,2 693,112 2019,6 2019,135 -11,135 "></polygon>
-                        </svg>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             x="0px" y="0px" viewBox="0 0 2000 120" preserveAspectRatio="none">
-                            <polygon fill="#FFF" points="-11,2 693,112 2019,6 2019,135 -11,135 "></polygon>
-                        </svg>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             x="0px" y="0px" viewBox="0 0 2000 120" preserveAspectRatio="none">
-                            <polygon fill="#FFF" points="-11,2 693,112 2019,6 2019,135 -11,135 "></polygon>
-                        </svg>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3 class="mb-3">
-                                Why Choose CertainPath?
-                            </h3>
-                            <p class="mb-0">
-                                Choose CertainPath because it's not just about managing your business, it's about
-                                helping you to succeed. Our platform is easy to use, designed specifically for
-                                contractors by people who know the industry. You'll gain instant access to real-time
-                                data and crucial business tools, but that's just the start. You'll also get a dedicated
-                                coach who's as invested in your success as you are, offering guidance to help your
-                                business grow and thrive. With CertainPath, you get more than software; you get a
-                                committed partner for your journey to success.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="shape-divider shape-divider-bottom shape-divider-reverse-y" style="height: 120px;">
-                    <div class="shape-divider-horizontal-animation shape-divider-horizontal-animation-to-right start">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             x="0px" y="0px" viewBox="0 0 2000 120" preserveAspectRatio="none">
-                            <polygon fill="#FFF" points="-11,2 693,112 2019,6 2019,135 -11,135 "></polygon>
-                        </svg>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             x="0px" y="0px" viewBox="0 0 2000 120" preserveAspectRatio="none">
-                            <polygon fill="#FFF" points="-11,2 693,112 2019,6 2019,135 -11,135 "></polygon>
-                        </svg>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             x="0px" y="0px" viewBox="0 0 2000 120" preserveAspectRatio="none">
-                            <polygon fill="#FFF" points="-11,2 693,112 2019,6 2019,135 -11,135 "></polygon>
-                        </svg>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section section-primary" style="display: none">
-                <div class="container-fluid my-5 py-5">
-                    <div class="row mt-5">
-                        <div class="col text-center">
-                            <h3 class="mt-5 pt-4">And hear stories and reviews like these all the time</h3>
-                        </div>
-                    </div>
-
-                    <div class="row px-5 mb-4">
-                        <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                            <div data-plugin-float-element=""
-                                 data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
-                                 style="bottom: 0px; transition: transform 1000ms ease-out 0ms; transform: translate3d(0px, -4.11017%, 0px);">
-                                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                    <div class="card-body py-3 px-2">
-                                        <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                            <div class="testimonial-author pb-3">
-                                                <div class="testimonial-author-thumbnail">
-                                                    <img src="img/clients/client-1.jpg" class="img-fluid rounded-circle"
-                                                         alt="">
-                                                </div>
-                                                <p>
-                                                    <strong class="font-weight-bold">John Smith</strong>
-                                                    <span>
-                                                        CEO &amp;
-                                                        Founder - Okler
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <div class="px-4 mx-2 pt-2 pb-3">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                                                    hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit.
-                                                </p>
-                                                <p class="mb-0">
-                                                    <i class="fas fa-star text-color-primary text-2"></i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                            <div data-plugin-float-element=""
-                                 data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
-                                 style="top: 0px; transition: transform 1000ms ease-out 0ms; transform: translate3d(0px, 4.21681%, 0px);">
-                                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                    <div class="card-body py-3 px-2">
-                                        <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                            <div class="testimonial-author pb-3">
-                                                <div class="testimonial-author-thumbnail">
-                                                    <img src="img/clients/client-2.jpg" class="img-fluid rounded-circle"
-                                                         alt="">
-                                                </div>
-                                                <p>
-                                                    <strong class="font-weight-bold">John Smith</strong>
-                                                    <span>
-                                                        CEO &amp;
-                                                        Founder - Okler
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <div class="px-4 mx-2 pt-2 pb-3">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                                                    hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit.
-                                                </p>
-                                                <p class="mb-0">
-                                                    <i class="fas fa-star text-color-primary text-2"></i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                            <div data-plugin-float-element=""
-                                 data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
-                                 style="bottom: 0px; transition: transform 1000ms ease-out 0ms; transform: translate3d(0px, -4.11017%, 0px);">
-                                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                    <div class="card-body py-3 px-2">
-                                        <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                            <div class="testimonial-author pb-3">
-                                                <div class="testimonial-author-thumbnail">
-                                                    <img src="img/clients/client-3.jpg" class="img-fluid rounded-circle"
-                                                         alt="">
-                                                </div>
-                                                <p>
-                                                    <strong class="font-weight-bold">John Smith</strong>
-                                                    <span>
-                                                        CEO &amp;
-                                                        Founder - Okler
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <div class="px-4 mx-2 pt-2 pb-3">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                                                    hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit.
-                                                </p>
-                                                <p class="mb-0">
-                                                    <i class="fas fa-star text-color-primary text-2"></i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                            <div data-plugin-float-element=""
-                                 data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
-                                 style="top: 0px; transition: transform 1000ms ease-out 0ms; transform: translate3d(0px, 4.21681%, 0px);">
-                                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                    <div class="card-body py-3 px-2">
-                                        <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                            <div class="testimonial-author pb-3">
-                                                <div class="testimonial-author-thumbnail">
-                                                    <img src="img/clients/client-4.jpg" class="img-fluid rounded-circle"
-                                                         alt="">
-                                                </div>
-                                                <p>
-                                                    <strong class="font-weight-bold">John Smith</strong>
-                                                    <span>
-                                                        CEO &amp;
-                                                        Founder - Okler
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <div class="px-4 mx-2 pt-2 pb-3">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                                                    hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit.
-                                                </p>
-                                                <p class="mb-0">
-                                                    <i class="fas fa-star text-color-primary text-2"></i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                            <div data-plugin-float-element=""
-                                 data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
-                                 style="bottom: 0px; transition: transform 1000ms ease-out 0ms; transform: translate3d(0px, -4.11017%, 0px);">
-                                <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                    <div class="card-body py-3 px-2">
-                                        <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                            <div class="testimonial-author pb-3">
-                                                <div class="testimonial-author-thumbnail">
-                                                    <img src="img/clients/client-2.jpg" class="img-fluid rounded-circle"
-                                                         alt="">
-                                                </div>
-                                                <p>
-                                                    <strong class="font-weight-bold">John Smith</strong>
-                                                    <span>
-                                                        CEO &amp;
-                                                        Founder - Okler
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <div class="px-4 mx-2 pt-2 pb-3">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                                                    hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit.
-                                                </p>
-                                                <p class="mb-0">
-                                                    <i class="fas fa-star text-color-primary text-2"></i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                    <i class="fas fa-star text-color-primary text-2">
-                                                    </i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <div id="examples" class="container py-2">
-
-                <div class="row">
-                    <div class="col">
-
-                        <section class="call-to-action with-borders with-button-arrow mb-5">
-                            <div class="col-sm-9 col-lg-9">
-                                <div class="call-to-action-content">
-                                    <h3>Start here to discover the CertainPath impact in your business.</h3>
-                                    <p class="mb-0">
-                                        Schedule time to meet with an advisor to see CertainPath in action.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-lg-3">
-                                <div class="call-to-action-btn">
-                                    <a href="https://go.mycertainpath.com/meetings/certainpath" target="_blank"
-                                       class="btn btn-modern text-2 btn-primary">
-                                        Schedule Demo
-                                    </a>
-                                    <span class="arrow hlb d-none d-md-block appear-animation animated rotateInUpLeft appear-animation-visible"
-                                          data-appear-animation="rotateInUpLeft"
-                                          style="left: 100%; top: -32px; animation-delay: 100ms;">
-                                    </span>
-                                </div>
-                            </div>
-                        </section>
-
-                    </div>
-                </div>
-
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h3 style="color: #ff6718 !important" class="mb-3">
+                  Why Choose CertainPath?
+                </h3>
+                <p style="font-size: 1.2rem !important" class="mb-0">
+                  Choose CertainPath because it's not just about managing your
+                  business, it's about helping you to succeed. Our platform is
+                  easy to use, designed specifically for contractors by people
+                  who know the industry. You'll gain instant access to real-time
+                  data and crucial business tools, but that's just the start.
+                  You'll also get a dedicated coach who's as invested in your
+                  success as you are, offering guidance to help your business
+                  grow and thrive. With CertainPath, you get more than software;
+                  you get a committed partner for your journey to success.
+                </p>
+              </div>
             </div>
+          </div>
 
+          <div
+            class="shape-divider shape-divider-bottom shape-divider-reverse-y"
+            style="height: 120px"
+          >
+            <div
+              class="shape-divider-horizontal-animation shape-divider-horizontal-animation-to-right start"
+            >
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 2000 120"
+                preserveAspectRatio="none"
+              >
+                <polygon
+                  fill="#FFF"
+                  points="-11,2 693,112 2019,6 2019,135 -11,135 "
+                ></polygon>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 2000 120"
+                preserveAspectRatio="none"
+              >
+                <polygon
+                  fill="#FFF"
+                  points="-11,2 693,112 2019,6 2019,135 -11,135 "
+                ></polygon>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 2000 120"
+                preserveAspectRatio="none"
+              >
+                <polygon
+                  fill="#FFF"
+                  points="-11,2 693,112 2019,6 2019,135 -11,135 "
+                ></polygon>
+              </svg>
+            </div>
+          </div>
+        </section>
 
-            <div class="container py-5">
-
-                <div class="text-center">
-                    <h2 class="text-color-dark font-weight-bold text-10 mb-4-5">Key Features</h2>
-
-                    <p class="font-weight-medium text-4-5 line-height-6 negative-ls-05">
-                        Discover the range of features
-                        designed to streamline your processes, improve customer engagement, and enhance overall
-                        efficiency.
+        <section id="start-here-to-discover"
+        class="container py-2">
+          <div class="row">
+            <div class="col">
+              <section
+                class="call-to-action with-borders with-button-arrow mb-5"
+              >
+                <div class="col-sm-9 col-lg-9">
+                  <div class="call-to-action-content">
+                    <h3>
+                      Start here to discover the CertainPath impact in your
+                      business.
+                    </h3>
+                    <p class="mb-0">
+                      Schedule time to meet with an advisor to see CertainPath
+                      in action.
                     </p>
+                  </div>
                 </div>
-
-                <div class="py-4">
-                    <hr>
+                <div class="col-sm-3 col-lg-3">
+                  <div class="call-to-action-btn">
+                    <a
+                      style="
+                        background-color: #b20030 !important;
+                        border-color: #b20030 !important;
+                      "
+                      href="https://go.mycertainpath.com/meetings/certainpath"
+                      target="_blank"
+                      class="btn btn-modern text-2 btn-primary"
+                    >
+                      Schedule Demo
+                    </a>
+                    <span
+                      class="arrow hlb d-none d-md-block appear-animation animated rotateInUpLeft appear-animation-visible"
+                      data-appear-animation="rotateInUpLeft"
+                      style="left: 100%; top: -32px; animation-delay: 100ms"
+                    >
+                    </span>
+                  </div>
                 </div>
-
-                <div class="row pb-4 mt-2">
-                    <div class="col-lg-4 appear-animation animated fadeInRightShorter appear-animation-visible"
-                         data-appear-animation="fadeInRightShorter" style="animation-delay: 100ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">Dispatch</h4>
-                                <p>
-                                    Quickly see everyone's availability and dispatch a technician.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 appear-animation animated fadeInRightShorter appear-animation-visible"
-                         data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"
-                         style="animation-delay: 200ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">Customers</h4>
-                                <p>CMS helps you track all of your customers and leads.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 appear-animation animated fadeInRightShorter appear-animation-visible"
-                         data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000"
-                         style="animation-delay: 1000ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">
-                                    GPS Tracking
-                                </h4>
-                                <p>
-                                    Keep tabs on all of your trucks with GPS location services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="row pb-4">
-                    <div class="col-lg-4 appear-animation animated fadeInLeftShorter appear-animation-visible"
-                         data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="800"
-                         style="animation-delay: 800ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">Jobs</h4>
-                                <p>View scheduled jobs, review technician debriefs, track material receipts, permits and warranty claims.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 appear-animation animated fadeInLeftShorter appear-animation-visible"
-                         data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600"
-                         style="animation-delay: 600ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons  text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">Invoices</h4>
-                                <p>Track invoices and sync with QuickBooks Online and QuickBooks Desktop.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 appear-animation animated fadeInLeftShorter appear-animation-visible"
-                         data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400"
-                         style="animation-delay: 400ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">Calls</h4>
-                                <p>Track and record all of your incoming calls.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 appear-animation animated fadeInRightShorter appear-animation-visible"
-                         data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800"
-                         style="animation-delay: 800ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">Inventory</h4>
-                                <p>Complete inventory management means your trucks are always stocked and ready to go.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 appear-animation animated fadeInRightShorter appear-animation-visible"
-                         data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000"
-                         style="animation-delay: 1000ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">
-                                    Pricebook
-                                </h4>
-                                <p>
-                                    Pricebooks provide customers with fixed rate pricing, piece of mind.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-
-
-                    <div class="col-lg-4 appear-animation animated fadeInRightShorter appear-animation-visible"
-                         data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000"
-                         style="animation-delay: 1000ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">
-                                    Reports
-                                </h4>
-                                <p>
-                                    Get true insights into your business with manager, technician, marketing, membership, profit margin reports, payroll, and more.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 appear-animation animated fadeInRightShorter appear-animation-visible"
-                         data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000"
-                         style="animation-delay: 1000ms;">
-                        <div class="feature-box feature-box-style-2">
-                            <div class="feature-box-icon">
-                                <i class="icons text-color-primary"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4 class="font-weight-bold mb-2">
-                                    Forecasting and budgeting
-                                </h4>
-                                <p>
-                                    Create forecasts and track your performance overtime.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
+              </section>
             </div>
+          </div>
+        </section>
 
-            <section class="section section-default mt-0 mb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h4 class="mb-3">
-                                CertainPath Software brings together the essentials that you need to run a
-                                profitable HVAC, Electrical, or Plumbing operation today.
-                            </h4>
-                        </div>
-                    </div>
+        <section id="key-features"
+          class="col appear-animation animated fadeInRightShorterPlus appear-animation-visible"
+          data-appear-animation="fadeInRightShorterPlus"
+          data-appear-animation-delay="100"
+          style="animation-delay: 100ms"
+        >
+          <!-- <div class="text-center">
+                    <h2 class="text-color-dark font-weight-bold text-10 mb-4-5">Key Features</h2>
+                </div> -->
+
+          <div class="text-center">
+            <h2 class="text-color-dark font-weight-bold text-10 mb-4-5">
+              Key Features
+            </h2>
+
+            <p class="font-weight-medium text-4-5 line-height-6 negative-ls-05">
+              Discover the range of features designed to streamline your
+              processes, improve customer engagement, and enhance overall
+              efficiency.
+            </p>
+          </div>
+
+          <div class="row pt-3">
+            <div class="col-lg-6">
+              <div
+                class="feature-box feature-box-style-6 custom-feature-box-1 reverse"
+              >
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-monitor.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary mt-1'}"
+                    class="svg-fill-color-primary mt-1"
+                    style="opacity: 1; width: 46px"
+                  />
                 </div>
-            </section>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">Dispatch</h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Quickly see everyone's availability and dispatch a
+                    technician.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-start">
+              <div class="feature-box feature-box-style-6 custom-feature-box-1">
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-refresh.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">Customers</h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    CMS helps you track all of your customers and leads.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-lg-6">
+              <div
+                class="feature-box feature-box-style-6 custom-feature-box-1 reverse"
+              >
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-finger.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">
+                    GPS Tracking
+                  </h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Keep tabs on all of your trucks with GPS location services.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-start">
+              <div class="feature-box feature-box-style-6 custom-feature-box-1">
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-chat.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">Jobs</h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    View scheduled jobs, review technician debriefs, track
+                    material receipts, permits and warranty claims.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-lg-6">
+              <div
+                class="feature-box feature-box-style-6 custom-feature-box-1 reverse"
+              >
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-avatar.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">Invoices</h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Track invoices and sync with QuickBooks Online and
+                    QuickBooks Desktop.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-start">
+              <div class="feature-box feature-box-style-6 custom-feature-box-1">
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-pencil.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">Calls</h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Track and record all of your incoming calls.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-lg-6">
+              <div
+                class="feature-box feature-box-style-6 custom-feature-box-1 reverse"
+              >
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-avatar.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">Inventory</h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Complete inventory management means your trucks are always
+                    stocked and ready to go.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-start">
+              <div class="feature-box feature-box-style-6 custom-feature-box-1">
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-pencil.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">Pricebook</h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Pricebooks provide customers with fixed rate pricing, piece
+                    of mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-lg-6">
+              <div
+                class="feature-box feature-box-style-6 custom-feature-box-1 reverse"
+              >
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-avatar.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">Reports</h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Get true insights into your business with manager,
+                    technician, marketing, membership, profit margin reports,
+                    payroll, and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-start">
+              <div class="feature-box feature-box-style-6 custom-feature-box-1">
+                <div class="feature-box-icon">
+                  <img
+                    width="46"
+                    src="img/demos/app-landing/icons/icon-pencil.svg"
+                    alt=""
+                    data-icon=""
+                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                    class="svg-fill-color-primary"
+                    style="opacity: 1; width: 46px"
+                  />
+                </div>
+                <div class="feature-box-info">
+                  <h4 class="text-5 font-weight-bold mb-1 mt-3">
+                    Forecasting and budgeting
+                  </h4>
+                  <p class="mb-4 text-3-5 font-weight-medium">
+                    Create forecasts and track your performance overtime.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <section id="support" class="section section-angled bg-light border-0 m-0 position-relative pt-0">
+        <section id="red-line-2"
+          style="background-color: #b20030 !important"
+          class="section section-default mt-0 mb-5"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h4 style="color: white !important" class="mb-3">
+                  CertainPath Software brings together the essentials that you
+                  need to run a profitable HVAC, Electrical, or Plumbing
+                  operation today.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="examples"
+        class="container py-2">
+          <div class="row align-items-center">
+            <div class="col-sm-9 col-md-7 mx-auto order-2 order-md-1">
+              <div class="cascading-images-wrapper">
+                <div class="cascading-images position-relative">
+                  <img
+                    src="img/blog/default/blog-11.jpg"
+                    class="appear-animation animated expandIn appear-animation-visible"
+                    width="500"
+                    alt=""
+                    data-appear-animation="expandIn"
+                    data-appear-animation-duration="600ms"
+                    style="animation-duration: 600ms; animation-delay: 100ms"
+                  />
+                  <div
+                    class="position-absolute w-100"
+                    style="top: 41%; left: -30%"
+                  >
+                    <img
+                      src="img/blog/default/blog-7.jpg"
+                      class="appear-animation animated expandIn appear-animation-visible"
+                      width="500"
+                      alt=""
+                      data-appear-animation="expandIn"
+                      data-appear-animation-delay="300"
+                      data-appear-animation-duration="600ms"
+                      style="animation-duration: 600ms; animation-delay: 300ms"
+                    />
+                  </div>
+                  <div
+                    class="position-absolute w-100"
+                    style="top: 75%; left: 30%"
+                  >
+                    <img
+                      src="img/blog/default/blog-5.jpg"
+                      class="appear-animation animated expandIn appear-animation-visible"
+                      width="500"
+                      alt=""
+                      data-appear-animation="expandIn"
+                      data-appear-animation-delay="600"
+                      data-appear-animation-duration="600ms"
+                      style="animation-duration: 600ms; animation-delay: 600ms"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="defaultCascadingImagesPopup"
+                class="dialog dialog-lg zoom-anim-dialog mfp-hide mfp-close-out px-3"
+              >
+                <pre class="rounded-0 mb-0" data-copy-to-clipboard="">
+&lt;div class="cascading-images-wrapper"&gt;
+&lt;div class="cascading-images position-relative"&gt;
+    &lt;img src="img/blog/default/blog-11.jpg" class="appear-animation" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-duration="600ms" /&gt;
+    &lt;div class="position-absolute w-100" style="top: 41%; left: -30%;"&gt;
+        &lt;img src="img/blog/default/blog-7.jpg" class="appear-animation" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-delay="300" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+    &lt;div class="position-absolute w-100" style="top: 75%; left: 30%;"&gt;
+        &lt;img src="img/blog/default/blog-5.jpg" class="appear-animation" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-delay="600" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre
+                >
+              </div>
+            </div>
+            <div class="col-md-4 py-lg-5 my-lg-5 mb-4 order-1 order-md-2">
+              <div
+                class="pe-3 ps-md-5 pb-3 pb-sm-0 py-lg-5 my-lg-4 border-left-light border-sm-none"
+              >
+                <h4 class="mb-2">Default</h4>
+                <p class="mb-2">This is the default cascading image example.</p>
+                <a
+                  href="#defaultCascadingImagesPopup"
+                  class="popup-with-zoom-anim"
+                  >Show Code Example</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <hr class="solid my-5" />
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-md-4 py-lg-5 my-lg-5 mb-4">
+              <div
+                class="pe-3 pe-md-5 pb-3 pb-sm-0 py-lg-5 my-lg-4 border-right-light border-sm-none"
+              >
+                <h4 class="mb-2">Fade In Animation</h4>
+                <p class="mb-2">
+                  This is a cascading image with Fade In animation.
+                </p>
+                <a
+                  href="#fadeInAnimationCascadingImagesPopup"
+                  class="popup-with-zoom-anim"
+                  >Show Code Example</a
+                >
+              </div>
+            </div>
+            <div class="col-sm-9 col-md-7 mx-auto">
+              <div class="cascading-images-wrapper">
+                <div class="cascading-images position-relative">
+                  <img
+                    src="img/blog/default/blog-11.jpg"
+                    class="appear-animation"
+                    width="500"
+                    alt=""
+                    data-appear-animation="fadeInUpShorter"
+                    data-appear-animation-duration="600ms"
+                    data-plugin-options="{'accY': -300}"
+                  />
+                  <div
+                    class="position-absolute w-100"
+                    style="top: 41%; left: -30%"
+                  >
+                    <img
+                      src="img/blog/default/blog-7.jpg"
+                      class="appear-animation"
+                      width="500"
+                      alt=""
+                      data-appear-animation="fadeInRightShorter"
+                      data-appear-animation-delay="300"
+                      data-appear-animation-duration="600ms"
+                      data-plugin-options="{'accY': -300}"
+                    />
+                  </div>
+                  <div
+                    class="position-absolute w-100"
+                    style="top: 75%; left: 30%"
+                  >
+                    <img
+                      src="img/blog/default/blog-5.jpg"
+                      class="appear-animation"
+                      width="500"
+                      alt=""
+                      data-appear-animation="fadeInLeftShorter"
+                      data-appear-animation-delay="600"
+                      data-appear-animation-duration="600ms"
+                      data-plugin-options="{'accY': -150}"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="fadeInAnimationCascadingImagesPopup"
+                class="dialog dialog-lg zoom-anim-dialog mfp-hide mfp-close-out px-3"
+              >
+                <pre class="rounded-0 mb-0" data-copy-to-clipboard="">
+&lt;div class="cascading-images-wrapper"&gt;
+&lt;div class="cascading-images position-relative"&gt;
+    &lt;img src="img/blog/default/blog-11.jpg" class="appear-animation" width="500" alt="" data-appear-animation="fadeInUpShorter" data-appear-animation-duration="600ms" data-plugin-options="{'accY': -300}" /&gt;
+    &lt;div class="position-absolute w-100" style="top: 41%; left: -30%;"&gt;
+        &lt;img src="img/blog/default/blog-7.jpg" class="appear-animation" width="500" alt="" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" data-appear-animation-duration="600ms" data-plugin-options="{'accY': -300}" /&gt;
+    &lt;/div&gt;
+    &lt;div class="position-absolute w-100" style="top: 75%; left: 30%;"&gt;
+        &lt;img src="img/blog/default/blog-5.jpg" class="appear-animation" width="500" alt="" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600" data-appear-animation-duration="600ms" data-plugin-options="{'accY': -150}" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <hr class="solid my-5" />
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-sm-9 col-md-7 mx-auto order-2 order-md-1">
+              <div class="cascading-images-wrapper">
+                <div class="cascading-images position-relative">
+                  <div class="overflow-hidden">
+                    <img
+                      src="img/blog/default/blog-11.jpg"
+                      class="appear-animation"
+                      width="500"
+                      alt=""
+                      data-appear-animation="maskUp"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+                  <div
+                    class="position-absolute overflow-hidden w-100"
+                    style="top: 41%; left: -30%"
+                  >
+                    <img
+                      src="img/blog/default/blog-7.jpg"
+                      class="appear-animation"
+                      width="500"
+                      alt=""
+                      data-appear-animation="maskRight"
+                      data-appear-animation-delay="300"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+                  <div
+                    class="position-absolute overflow-hidden w-100"
+                    style="top: 75%; left: 30%"
+                  >
+                    <img
+                      src="img/blog/default/blog-5.jpg"
+                      class="appear-animation"
+                      width="500"
+                      alt=""
+                      data-appear-animation="maskLeft"
+                      data-appear-animation-delay="600"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="maskAnimationCascadingImagesPopup"
+                class="dialog dialog-lg zoom-anim-dialog mfp-hide mfp-close-out px-3"
+              >
+                <pre class="rounded-0 mb-0" data-copy-to-clipboard="">
+&lt;div class="cascading-images-wrapper"&gt;
+&lt;div class="cascading-images position-relative"&gt;
+    &lt;div class="overflow-hidden"&gt;
+        &lt;img src="img/blog/default/blog-11.jpg" class="appear-animation" width="500" alt="" data-appear-animation="maskUp" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+    &lt;div class="position-absolute overflow-hidden w-100" style="top: 41%; left: -30%;"&gt;
+        &lt;img src="img/blog/default/blog-7.jpg" class="appear-animation" width="500" alt="" data-appear-animation="maskRight" data-appear-animation-delay="300" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+    &lt;div class="position-absolute overflow-hidden w-100" style="top: 75%; left: 30%;"&gt;
+        &lt;img src="img/blog/default/blog-5.jpg" class="appear-animation" width="500" alt="" data-appear-animation="maskLeft" data-appear-animation-delay="600" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre
+                >
+              </div>
+            </div>
+            <div class="col-md-4 py-lg-5 my-lg-5 mb-4 order-1 order-md-2">
+              <div
+                class="pe-3 ps-md-5 pb-3 pb-sm-0 py-lg-5 my-lg-4 border-left-light border-sm-none"
+              >
+                <h4 class="mb-2">Mask Animation</h4>
+                <p class="mb-2">
+                  This is a cascading images with mask animation.
+                </p>
+                <a
+                  href="#maskAnimationCascadingImagesPopup"
+                  class="popup-with-zoom-anim"
+                  >Show Code Example</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <hr class="solid my-5" />
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-md-4 py-lg-5 my-lg-5 mb-4">
+              <div
+                class="pe-3 pe-md-5 pb-3 pb-sm-0 py-lg-5 my-lg-4 border-right-light border-sm-none"
+              >
+                <h4 class="mb-2">With Shadow</h4>
+                <p class="mb-2">This is a cascading images with shadow.</p>
+                <a
+                  href="#withShadowCascadingImagesPopup"
+                  class="popup-with-zoom-anim"
+                  >Show Code Example</a
+                >
+              </div>
+            </div>
+            <div class="col-sm-9 col-md-7 mx-auto">
+              <div class="cascading-images-wrapper">
+                <div class="cascading-images position-relative">
+                  <img
+                    src="img/blog/default/blog-11.jpg"
+                    class="appear-animation box-shadow-3"
+                    width="500"
+                    alt=""
+                    data-appear-animation="expandIn"
+                    data-appear-animation-duration="600ms"
+                  />
+                  <div
+                    class="position-absolute w-100"
+                    style="top: 41%; left: -30%"
+                  >
+                    <img
+                      src="img/blog/default/blog-7.jpg"
+                      class="appear-animation box-shadow-3"
+                      width="500"
+                      alt=""
+                      data-appear-animation="expandIn"
+                      data-appear-animation-delay="300"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+                  <div
+                    class="position-absolute w-100"
+                    style="top: 75%; left: 30%"
+                  >
+                    <img
+                      src="img/blog/default/blog-5.jpg"
+                      class="appear-animation box-shadow-3"
+                      width="500"
+                      alt=""
+                      data-appear-animation="expandIn"
+                      data-appear-animation-delay="600"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="withShadowCascadingImagesPopup"
+                class="dialog dialog-lg zoom-anim-dialog mfp-hide mfp-close-out px-3"
+              >
+                <pre class="rounded-0 mb-0" data-copy-to-clipboard="">
+&lt;div class="cascading-images-wrapper"&gt;
+&lt;div class="cascading-images position-relative"&gt;
+    &lt;img src="img/blog/default/blog-11.jpg" class="appear-animation box-shadow-3" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-duration="600ms" /&gt;
+    &lt;div class="position-absolute w-100" style="top: 41%; left: -30%;"&gt;
+        &lt;img src="img/blog/default/blog-7.jpg" class="appear-animation box-shadow-3" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-delay="300" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+    &lt;div class="position-absolute w-100" style="top: 75%; left: 30%;"&gt;
+        &lt;img src="img/blog/default/blog-5.jpg" class="appear-animation box-shadow-3" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-delay="600" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <hr class="solid my-5" />
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-sm-9 col-md-7 mx-auto order-2 order-md-1">
+              <div class="cascading-images-wrapper">
+                <div class="cascading-images position-relative">
+                  <div
+                    data-plugin-float-element=""
+                    data-plugin-options="{'startPos': 'top', 'speed': 0.1, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"
+                  >
+                    <img
+                      src="img/blog/default/blog-11.jpg"
+                      class="appear-animation"
+                      width="500"
+                      alt=""
+                      data-appear-animation="expandIn"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+                  <div
+                    class="position-absolute w-100"
+                    style="top: 41%; left: -30%"
+                  >
+                    <div
+                      data-plugin-float-element=""
+                      data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"
+                    >
+                      <img
+                        src="img/blog/default/blog-7.jpg"
+                        class="appear-animation"
+                        width="500"
+                        alt=""
+                        data-appear-animation="expandIn"
+                        data-appear-animation-delay="300"
+                        data-appear-animation-duration="600ms"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="position-absolute w-100"
+                    style="top: 75%; left: 30%"
+                  >
+                    <div
+                      data-plugin-float-element=""
+                      data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"
+                    >
+                      <img
+                        src="img/blog/default/blog-5.jpg"
+                        class="appear-animation"
+                        width="500"
+                        alt=""
+                        data-appear-animation="expandIn"
+                        data-appear-animation-delay="600"
+                        data-appear-animation-duration="600ms"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="floatingEffectCascadingImagesPopup"
+                class="dialog dialog-lg zoom-anim-dialog mfp-hide mfp-close-out px-3"
+              >
+                <pre class="rounded-0 mb-0" data-copy-to-clipboard="">
+&lt;div class="cascading-images-wrapper"&gt;
+&lt;div class="cascading-images position-relative"&gt;
+    &lt;div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"&gt;
+        &lt;img src="img/blog/default/blog-11.jpg" class="appear-animation" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+    &lt;div class="position-absolute w-100" style="top: 41%; left: -30%;"&gt;
+        &lt;div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"&gt;
+            &lt;img src="img/blog/default/blog-7.jpg" class="appear-animation" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-delay="300" data-appear-animation-duration="600ms" /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="position-absolute w-100" style="top: 75%; left: 30%;"&gt;
+        &lt;div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.4, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"&gt;
+            &lt;img src="img/blog/default/blog-5.jpg" class="appear-animation" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-delay="600" data-appear-animation-duration="600ms" /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre
+                >
+              </div>
+            </div>
+            <div class="col-md-4 py-lg-5 my-lg-5 mb-4 order-1 order-md-2">
+              <div
+                class="pe-3 ps-md-5 pb-3 pb-sm-0 py-lg-5 my-lg-4 border-left-light border-sm-none"
+              >
+                <h4 class="mb-2">Floating Effect</h4>
+                <p class="mb-2">
+                  This is a cascading images with floating effect.
+                </p>
+                <a
+                  href="#floatingEffectCascadingImagesPopup"
+                  class="popup-with-zoom-anim"
+                  >Show Code Example</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <hr class="solid my-5" />
+            </div>
+          </div>
+
+          <div class="row align-items-center py-5">
+            <div class="col-md-4 py-lg-5 my-lg-5 mb-4">
+              <div
+                class="pe-3 pe-md-5 pb-3 pb-sm-0 py-lg-5 my-lg-4 border-right-light border-sm-none"
+              >
+                <h4 class="mb-2">Floating Effect with Elements</h4>
+                <p class="mb-2">
+                  This is a cascading images with floating effect.
+                </p>
+                <a
+                  href="#floatingEffect2CascadingImagesPopup"
+                  class="popup-with-zoom-anim"
+                  >Show Code Example</a
+                >
+              </div>
+            </div>
+            <div class="col-sm-8 ps-5">
+              <div
+                class="cascading-images-wrapper bg-color-grey border-radius-2 p-5 w-100 text-center"
+              >
+                <div
+                  class="cascading-images transform-none position-relative clearfix"
+                >
+                  <div class="position-absolute z-index-3" style="top: 20%">
+                    <div
+                      data-plugin-float-element=""
+                      data-plugin-options="{'startPos': 'bottom', 'speed': 0.1, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"
+                    >
+                      <img
+                        src="img/blog/square/blog-7.jpg"
+                        style="max-width: 200px"
+                        class="appear-animation border-radius-2 box-shadow-3"
+                        width="500"
+                        alt=""
+                        data-appear-animation="expandIn"
+                        data-appear-animation-delay="300"
+                        data-appear-animation-duration="600ms"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="position-relative z-index-2">
+                    <img
+                      src="img/blog/square/blog-11.jpg"
+                      class="appear-animation border-radius-2 box-shadow-3"
+                      width="500"
+                      alt=""
+                      data-appear-animation="expandIn"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+
+                  <div
+                    class="patterns opacity-7 position-absolute z-index-1 d-none d-md-block"
+                    style="bottom: -8%; right: 9%"
+                  >
+                    <div
+                      data-plugin-float-element=""
+                      data-plugin-options="{'startPos': 'top', 'speed': 0.1, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"
+                      style="width: 310px; height: 170px"
+                    >
+                      <svg width="100%" height="100%">
+                        <defs>
+                          <pattern
+                            id="dots"
+                            x="0"
+                            y="0"
+                            width="18"
+                            height="18"
+                            patternUnits="userSpaceOnUse"
+                          >
+                            <circle
+                              fill="#0088cc"
+                              cx="1.5"
+                              cy="1.5"
+                              r="1.5"
+                            ></circle>
+                          </pattern>
+                        </defs>
+                        <rect
+                          x="0"
+                          y="0"
+                          width="100%"
+                          height="100%"
+                          fill="url(#dots)"
+                        ></rect>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div
+                    class="patterns opacity-7 position-absolute z-index-1 d-none d-md-block"
+                    style="top: 10%; left: -38.2%"
+                  >
+                    <div
+                      data-plugin-float-element=""
+                      data-plugin-options="{'startPos': 'top', 'speed': 0.1, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"
+                      style="width: 310px; height: 170px"
+                    >
+                      <svg width="100%" height="100%">
+                        <defs>
+                          <pattern
+                            id="dots2"
+                            x="0"
+                            y="0"
+                            width="18"
+                            height="18"
+                            patternUnits="userSpaceOnUse"
+                          >
+                            <circle
+                              fill="#CCC"
+                              cx="1.5"
+                              cy="1.5"
+                              r="1.5"
+                            ></circle>
+                          </pattern>
+                        </defs>
+                        <rect
+                          x="0"
+                          y="0"
+                          width="100%"
+                          height="100%"
+                          fill="url(#dots2)"
+                        ></rect>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="floatingEffect2CascadingImagesPopup"
+                class="dialog dialog-lg zoom-anim-dialog mfp-hide mfp-close-out px-3"
+              >
+                <pre class="rounded-0 mb-0" data-copy-to-clipboard="">
+&lt;div class="position-absolute z-index-3" style="top: 50%;"&gt;
+&lt;div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.1, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"&gt;
+    &lt;img src="img/blog/square/blog-7.jpg" style="max-width: 200px;" class="appear-animation border-radius-2 box-shadow-3" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-delay="300" data-appear-animation-duration="600ms" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="position-relative z-index-2"&gt;
+&lt;img src="img/blog/square/blog-11.jpg" class="appear-animation border-radius-2 box-shadow-3" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-duration="600ms" /&gt;
+&lt;/div&gt;
+
+&lt;div class="patterns opacity-7 position-absolute z-index-1 d-none d-md-block" style="bottom: -8%; right: 9%;"&gt;
+&lt;div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.1, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}" style="width: 310px; height: 170px;"&gt;
+    &lt;svg width="100%" height="100%"&gt;
+        &lt;defs&gt;
+            &lt;pattern id="dots" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse"&gt;
+                &lt;circle fill="#0088cc" cx="1.5" cy="1.5" r="1.5" /&gt;
+            &lt;/pattern&gt;
+        &lt;/defs&gt;
+        &lt;rect x="0" y="0" width="100%" height="100%" fill="url(#dots)" /&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="patterns opacity-7 position-absolute z-index-1 d-none d-md-block" style="top: -10%; left: -36%;"&gt;
+&lt;div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.1, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}" style="width: 310px; height: 170px;"&gt;
+    &lt;svg width="100%" height="100%"&gt;
+        &lt;defs&gt;
+            &lt;pattern id="dots2" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse"&gt;
+                &lt;circle fill="#CCC" cx="1.5" cy="1.5" r="1.5" /&gt;
+            &lt;/pattern&gt;
+        &lt;/defs&gt;
+        &lt;rect x="0" y="0" width="100%" height="100%" fill="url(#dots2)" /&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <hr class="solid my-5" />
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-md-4 py-lg-4 my-lg-4 mb-4">
+              <div
+                class="pe-3 pe-md-5 pb-3 pb-sm-0 py-lg-5 my-lg-4 border-right-light border-sm-none"
+              >
+                <h4 class="mb-2">Less Images</h4>
+                <p class="mb-2">This is a cascading images with less images.</p>
+                <a
+                  href="#lessImagesCascadingImagesPopup"
+                  class="popup-with-zoom-anim"
+                  >Show Code Example</a
+                >
+              </div>
+            </div>
+            <div class="col-sm-9 col-md-7 mx-auto">
+              <div class="cascading-images-wrapper pb-0">
+                <div class="cascading-images position-relative">
+                  <img
+                    src="img/blog/default/blog-11.jpg"
+                    class="appear-animation box-shadow-3"
+                    width="500"
+                    alt=""
+                    data-appear-animation="expandIn"
+                    data-appear-animation-duration="600ms"
+                  />
+                  <div
+                    class="position-absolute w-100"
+                    style="top: 25%; left: 10%"
+                  >
+                    <img
+                      src="img/blog/default/blog-5.jpg"
+                      class="appear-animation box-shadow-3"
+                      width="500"
+                      alt=""
+                      data-appear-animation="expandIn"
+                      data-appear-animation-delay="300"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="lessImagesCascadingImagesPopup"
+                class="dialog dialog-lg zoom-anim-dialog mfp-hide mfp-close-out px-3"
+              >
+                <pre class="rounded-0 mb-0" data-copy-to-clipboard="">
+&lt;div class="cascading-images-wrapper pb-0"&gt;
+&lt;div class="cascading-images position-relative"&gt;
+    &lt;img src="img/blog/default/blog-11.jpg" class="appear-animation box-shadow-3" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-duration="600ms" /&gt;
+    &lt;div class="position-absolute w-100" style="top: 25%; left: 10%;"&gt;
+        &lt;img src="img/blog/default/blog-5.jpg" class="appear-animation box-shadow-3" width="500" alt="" data-appear-animation="expandIn" data-appear-animation-delay="300" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <hr class="solid my-5" />
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-sm-9 col-md-7 mx-auto order-2 order-md-1">
+              <div class="cascading-images-wrapper pb-0">
+                <div class="cascading-images position-relative">
+                  <div
+                    class="cascading-images-colored-bar bg-primary position-absolute top-0 right-0 bottom-0 left-0 appear-animation"
+                    data-appear-animation="fadeInRightShorter"
+                    data-appear-animation-duration="600ms"
+                  ></div>
+                  <div class="position-relative" style="top: 40px; left: 40px">
+                    <img
+                      src="img/blog/default/blog-11.jpg"
+                      class="appear-animation box-shadow-3"
+                      width="500"
+                      alt=""
+                      data-appear-animation="fadeInRightShorter"
+                      data-appear-animation-delay="500"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="coloredBarBehindCascadingImagesPopup"
+                class="dialog dialog-lg zoom-anim-dialog mfp-hide mfp-close-out px-3"
+              >
+                <pre class="rounded-0 mb-0" data-copy-to-clipboard="">
+&lt;div class="cascading-images-wrapper pb-0"&gt;
+&lt;div class="cascading-images position-relative"&gt;
+    &lt;div class="cascading-images-colored-bar bg-primary position-absolute top-0 right-0 bottom-0 left-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-duration="600ms"&gt;&lt;/div&gt;
+    &lt;div class="position-relative" style="top: 40px; left: 40px;"&gt;
+        &lt;img src="img/blog/default/blog-11.jpg" class="appear-animation box-shadow-3" width="500" alt="" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre
+                >
+              </div>
+            </div>
+            <div class="col-md-4 py-lg-4 my-lg-4 mb-4 order-1 order-md-2">
+              <div
+                class="pe-3 ps-md-5 pb-3 pb-sm-0 py-lg-5 my-lg-4 border-left-light border-sm-none"
+              >
+                <h4 class="mb-2">Colored Bar Behind</h4>
+                <p class="mb-2">
+                  This is a cascading images with colored bar behind.
+                </p>
+                <a
+                  href="#coloredBarBehindCascadingImagesPopup"
+                  class="popup-with-zoom-anim"
+                  >Show Code Example</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <hr class="solid my-5" />
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-md-4 py-lg-4 my-lg-4 mb-4">
+              <div
+                class="pe-3 pe-md-5 pb-3 pb-sm-0 py-lg-5 my-lg-4 border-right-light border-sm-none"
+              >
+                <h4 class="mb-2">Colored Bar Floating</h4>
+                <p class="mb-2">
+                  This is a cascading images with colored bar floating.
+                </p>
+                <a
+                  href="#coloredBarFloatingCascadingImagesPopup"
+                  class="popup-with-zoom-anim"
+                  >Show Code Example</a
+                >
+              </div>
+            </div>
+            <div class="col-sm-9 col-md-7 mx-auto">
+              <div class="cascading-images-wrapper pb-0">
+                <div class="cascading-images position-relative">
+                  <div
+                    class="position-absolute top-0 right-0 bottom-0 left-0"
+                    data-plugin-float-element=""
+                    data-plugin-options="{'startPos': 'top', 'speed': 0.1, 'transition': true, 'horizontal': true, 'transitionDuration': 1000, 'isInsideSVG': true}"
+                  >
+                    <div
+                      class="cascading-images-colored-bar bg-primary position-absolute top-0 right-0 bottom-0 left-0 appear-animation"
+                      data-appear-animation="fadeIn"
+                      data-appear-animation-duration="600ms"
+                    ></div>
+                  </div>
+                  <div class="position-relative" style="top: 35px; left: 35px">
+                    <img
+                      src="img/blog/default/blog-11.jpg"
+                      class="appear-animation box-shadow-3"
+                      width="500"
+                      alt=""
+                      data-appear-animation="fadeIn"
+                      data-appear-animation-delay="500"
+                      data-appear-animation-duration="600ms"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="coloredBarFloatingCascadingImagesPopup"
+                class="dialog dialog-lg zoom-anim-dialog mfp-hide mfp-close-out px-3"
+              >
+                <pre class="rounded-0 mb-0" data-copy-to-clipboard="">
+&lt;div class="cascading-images-wrapper pb-0"&gt;
+&lt;div class="cascading-images position-relative"&gt;
+    &lt;div class="position-absolute top-0 right-0 bottom-0 left-0" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.1, 'transition': true, 'horizontal': true, 'transitionDuration': 1000, 'isInsideSVG': true}"&gt;
+        &lt;div class="cascading-images-colored-bar bg-primary position-absolute top-0 right-0 bottom-0 left-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-duration="600ms"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="position-relative" style="top: 35px; left: 35px;"&gt;
+        &lt;img src="img/blog/default/blog-11.jpg" class="appear-animation box-shadow-3" width="500" alt="" data-appear-animation="fadeIn" data-appear-animation-delay="500" data-appear-animation-duration="600ms" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section id="support" class="section section-angled bg-light border-0 m-0 position-relative pt-0">
                 <div class="container pb-5 mb-5">
                     <div class="row align-items-center mb-5">
                         <div class="col-lg-6 pe-xl-5 mb-5 mb-lg-0">
@@ -968,27 +1783,21 @@
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
 
-                            <a class="lightbox" href="/images/calls.png" data-plugin-options="{'type':'image'}">
-                                <img alt="Porto Support" src="/images/calls.png"
-                                     data-src="/images/calls.png"
-                                     class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     style="width: 400px; max-width: none; animation-delay: 200ms;">
-                            </a>
-                            
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/Calls.png" data-plugin-options="{'type':'image'}">
+                                    <img alt="Porto Support" src="images/Calls.png"
+                                         data-src="images/Calls.png"
+                                         class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200">
+                                </a>
+                            </div>
 
-                            
-                            <!--<img alt="Porto Documentation" src="img/landing/porto_docs.jpg"
-             data-src="img/landing/porto_docs.jpg"
-             class="img-fluid rounded box-shadow-3 position-absolute appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-             data-appear-animation="fadeInUp" data-appear-animation-delay="700"
-             style="left: -100px; bottom: 50px; animation-delay: 700ms;">-->
+
+                            </div>
                         </div>
-                    </div>
                 </div>
 
             </section>
-
 
             <section id="support" class="section section-angled bg-light border-0 m-0 position-relative pt-0">
                 <div class="container pb-5 mb-5">
@@ -1058,28 +1867,22 @@
                                      data-src="img/landing/porto_dots2.png" alt=""
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
-                            <a class="lightbox" href="images/Customer.png" data-plugin-options="{'type':'image'}">
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/Customer.png" data-plugin-options="{'type':'image'}">
 
-                            <img alt="Customer" src="/images/Customer.png"
-                                 data-src="images/Customer.png"
-                               
-                                 class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                 data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                 style="width: 400px; max-width: none; animation-delay: 200ms;">
-                            
-                            </a>
-                        
+                                    <img alt="Customer" src="images/Customer.png"
+                                         data-src="images/Customer.png"
+                                         class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200" />
+
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
             </section>
-
-
-
-
-
-
 
             <section id="support" class="section section-angled bg-light border-0 m-0 position-relative pt-0">
                 <div class="container pb-5 mb-5">
@@ -1133,22 +1936,22 @@
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
 
-                            <a class="lightbox" href="/images/customer.png" data-plugin-options="{'type':'image'}">
-                                <img alt="Scheduling" src="images/scheduling.png"
-                                     data-src="images/scheduling.png"
-                                     class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     style="width: 400px; max-width: none; animation-delay: 200ms;">
-</a>    
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/Scheduling.png" data-plugin-options="{'type':'image'}">
+                                    <img alt="Scheduling" src="images/Scheduling.png"
+                                         data-src="images/scheduling.png"
+                                         class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                         >
+                                </a>
+                                </div>
 
+                            </div>
                         </div>
-                    </div>
                 </div>
 
             </section>
-
-
 
             <section id="support" class="section section-angled bg-light border-0 m-0 position-relative pt-0">
                 <div class="container pb-5 mb-5">
@@ -1209,23 +2012,22 @@
                                      data-src="img/landing/porto_dots2.png" alt=""
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
-
-                            <a class="lightbox" href="/images/mobileapp1.png" data-plugin-options="{'type':'image'}">
-                                <img alt="Mobile App" src="images/mobileapp1.png"
-                                     data-src="images/mobileapp1.png"
-                                     class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     style="height: 400px; max-width: none; animation-delay: 200ms;">
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/mobileapp1.png" data-plugin-options="{'type':'image'}">
+                                    <img alt="Mobile App" src="images/mobileapp1.png"
+                                         data-src="images/mobileapp1.png"
+                                         class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                        >
                                 </a>
+                                </div>
 
+                            </div>
                         </div>
-                    </div>
                 </div>
 
             </section>
-
-
 
             <section id="support" class="section section-angled bg-light border-0 m-0 position-relative pt-0">
                 <div class="container pb-5 mb-5">
@@ -1285,31 +2087,28 @@
                         </div>
                         <div class="col-lg-4 offset-lg-2 position-relative">
                             <div class="appear-animation animated fadeIn appear-animation-visible"
-                                 data-appear-animation="fadeIn" data-appear-animation-delay="500"
-                                 style="animation-delay: 500ms;">
+                                data-appear-animation="fadeIn" data-appear-animation-delay="500"
+                                style="animation-delay: 500ms;">
                                 <img class="img-fluid ls-is-cached lazyloaded" src="img/landing/porto_dots2.png"
-                                     data-src="img/landing/porto_dots2.png" alt=""
-                                     style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
+                                    data-src="img/landing/porto_dots2.png" alt=""
+                                    style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
-                            <a class="lightbox" href="/images/customer.png" data-plugin-options="{'type':'image'}">
 
-                                <img alt="Invoices" src="images/invoices.png"
-                                     data-src="img/landing/Operations.png"
-                                     class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                     style="width: 400px; max-width: none; animation-delay: 200ms;">
-                            </a>    
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/Invoices.png" data-plugin-options="{'type':'image'}">
 
-
+                                    <img alt="Invoices" src="images/Invoices.png"
+                                        data-src="images/Invoices.png"
+                                        class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
+                                        data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                        data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                        >
+                                </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                 </div>
-
             </section>
-
-
-
 
             <section id="support" class="section section-angled bg-light border-0 m-0 position-relative pt-0">
                 <div class="container pb-5 mb-5">
@@ -1388,71 +2187,69 @@
                                      style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
                             </div>
 
-                            <a class="lightbox" href="images/job.png" data-plugin-options="{'type':'image'}">
-                            
-
-                            <img alt="Job" src="images/job.png" data-src="images/job.png"
-                                 class="img-fluid appear-animation ls-is-cached lazyloaded animated fadeInUp appear-animation-visible"
-                                 data-appear-animation="fadeInUp" data-appear-animation-delay="200"
-                                 style="width: 400px; max-width: none; animation-delay: 200ms;">
-                            
-                            </a>    
-
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section id="downloads" class="bg-primary py-5 my-5 p-relative z-index-2">
-                <div class="container">
-
-                    <div class="row py-5 text-color-light p-relative">
-                        <div class="col-lg-7 text-center text-lg-start">
-
-                            <h2 class="text-color-light font-weight-bold text-10 mb-5">Schedule a call</h2>
-
-                            <p class="font-weight-semibold text-color-light text-6 line-height-6 negative-ls-05 mt-4 mb-0">
-                                Have a question about CertainPath Software or just want to see CertainPath in action for
-                                yourself? Schedule a call today.
-                            </p>
-                            <div class="call-to-action-btn mt-3">
-                                <a href="https://go.mycertainpath.com/meetings/certainpath" target="_blank"
-                                   class="btn btn-modern text-2 btn-secondary">
-                                    Schedule Demo
+                            <div class="screenshot-panel">
+                                <a class="lightbox" href="images/Job.png" data-plugin-options="{'type':'image'}">
+                                    <img alt="Job" src="images/Job.png" class="img-fluid appear-animation animated fadeInUp appear-animation-visible"
+                                         data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                                         style="animation-delay: 200ms;">
                                 </a>
                             </div>
 
-                        </div>
 
+                        </div>
                     </div>
                 </div>
-            </section>
 
-        </div>
+            </section> -->
 
+        <section id="footer-weird"
+          class="bg-primary py-5 my-5 p-relative z-index-2"
+        >
+          <div class="container">
+            <div class="row py-5 text-color-light p-relative">
+              <div class="col-lg-7 text-center text-lg-start">
+                <h2 class="text-color-light font-weight-bold text-10 mb-5">
+                  Schedule a call
+                </h2>
 
-        <!-- Vendor -->
-        <script src="vendor/plugins/js/plugins.min.js"></script>
+                <p
+                  class="font-weight-semibold text-color-light text-6 line-height-6 negative-ls-05 mt-4 mb-0"
+                >
+                  Have a question about CertainPath Software or just want to see
+                  CertainPath in action for yourself? Schedule a call today.
+                </p>
+                <div class="call-to-action-btn mt-3">
+                  <a
+                    href="https://go.mycertainpath.com/meetings/certainpath"
+                    target="_blank"
+                    class="btn btn-modern text-2 btn-secondary"
+                  >
+                    Schedule Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
-        <!-- Theme Base, Components and Settings -->
-        <script src="js/theme.js"></script>
+      <!-- Vendor -->
+      <script src="vendor/plugins/js/plugins.min.js"></script>
 
-        <!-- Current Page Vendor and Views -->
-        <script src="js/views/view.contact.js"></script>
+      <!-- Theme Base, Components and Settings -->
+      <script src="js/theme.js"></script>
 
-        <!-- Demo -->
-        <script src="js/demos/demo-app-landing.js"></script>
+      <!-- Current Page Vendor and Views -->
+      <script src="js/views/view.contact.js"></script>
 
-        <!-- Theme Custom -->
-        <script src="js/custom.js"></script>
+      <!-- Demo -->
+      <script src="js/demos/demo-app-landing.js"></script>
 
-        <!-- Theme Initialization Files -->
-        <script src="js/theme.init.js"></script>
+      <!-- Theme Custom -->
+      <script src="js/custom.js"></script>
 
-
-
+      <!-- Theme Initialization Files -->
+      <script src="js/theme.init.js"></script>
     </div>
-</body>
-
+  </body>
 </html>
