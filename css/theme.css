@@ -10105,7 +10105,7 @@ a.text-light:focus, a.text-light:hover {
 	background: #212529;
 	border-top: 4px solid #212529;
 	font-size: 0.9em;
-	margin-top: 50px;
+	margin-top: 0px;
 	padding: 0;
 	position: relative;
 	clear: both;
@@ -10130,11 +10130,11 @@ a.text-light:focus, a.text-light:hover {
 	width: 7px;
 }
 
-#footer .footer-ribbon span {
-	color: #FFF;
-	font-size: 1.6em;
-	font-family: "Shadows Into Light", cursive;
-}
+	#footer .footer-ribbon span {
+		color: #FFF;
+		font-size: 1.6em;
+		font-family: "Poppins", Arial, sans-serif;
+	}
 
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
 	color: #FFF;

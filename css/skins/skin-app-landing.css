@@ -1216,10 +1216,10 @@ html .btn-check:focus + .btn-primary {
 
 html .btn-secondary {
 	background-color: #B20030;
-	border-color: #B20030 #B20030 #6f06dc;
+	border-color: #B20030 ;
 	color: #FFF;
 	--color: #B20030;
-	--hover: #9c41fa;
+	/*--hover: #9c41fa;*/
 	--disabled: #B20030;
 	--active: #7506e9;
 }
